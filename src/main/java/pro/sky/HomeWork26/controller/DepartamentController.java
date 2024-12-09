@@ -33,7 +33,7 @@ public class DepartamentController {
         return departamentService.getEmployeeWithMaxSalaryByDepartament(departamentId);
     }
 
-    @GetMapping
+    @GetMapping("/min-salary")
     public Employee getEmployeeWithMinSalaryByDepartament(@RequestParam("departamentId") String departamentId) {
         return departamentService.getEmployeeWithMinSalaryByDepartament(departamentId);
     }
